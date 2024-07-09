@@ -27,7 +27,7 @@ module "sg" {
   source = "terraform-aws-modules/security-group/aws"
 
   name        = "jenkins-sg"
-  description = "securty Group for jenkins server"
+  description = "security Group for jenkins server"
   vpc_id      = module.vpc.vpc_id
 
   ingress_with_cidr_blocks = [
